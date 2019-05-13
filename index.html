@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-<script
-  src="jquery-3.3.1.min.js"></script>
-<link href="css/oswald.css" rel="stylesheet">
-<style>
-body {
-line-height:1;
-  margin: 0;
-}
-table, th, td {
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 150%;
-  table-layout: fixed;
-   margin: 0 auto;
-    padding-left: 5px;
-	  padding-right: 5px;
-	  padding-bottom: 5px;
-}
-table {
-background-color: rgba(255, 255, 255, 0.4);
-}
-img {
-height: 120px;
-}
-.team {
-font-size: 250%;
-}
-.period {
-font-size: 210%;
-  padding: 20px;
-}
-.scoremid {
-font-size: 400%;
-}
-.small {
-font-size: 100%;
-}
-.scoremid.edge {
-padding: 15px;
-}
+  <script src="jquery-3.3.1.min.js"></script>
+  <link href="css/oswald.css" rel="stylesheet">
+  <style>
+    body {
+      line-height: 1;
+      margin: 0;
+    }
 
-</style>
-<script src="script.js"></script>
+    table,
+    th,
+    td {
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 150%;
+      table-layout: fixed;
+      margin: 0 auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+    }
+
+    table {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    img {
+      height: 120px;
+    }
+
+    .team {
+      font-size: 250%;
+    }
+
+    .period {
+      font-size: 210%;
+      padding: 20px;
+    }
+
+    .scoremid {
+      font-size: 400%;
+    }
+
+    .small {
+      font-size: 100%;
+    }
+
+    .scoremid.edge {
+      padding: 15px;
+    }
+  </style>
+  <script src="script.js"></script>
 </head>
+
 <body>
-<table id="gameTable">
-<tr>
-<th colspan="20" id="message" class="small"></th>
-</tr>
-  <tr>
-    <th rowspan="2"><img id="awaymascot" class="awaymascot"></th>
-    <th colspan="5" id="awayteam" class="team awayteam"></th>
-    <th rowspan="2" class="scoremid edge"></th>
-    <th colspan="2" rowspan="2" width="114" height="114" id="homescore" class="scoremid homescore"></th>
-    <th rowspan="2" id="period" class="period"></th>
-    <th colspan="2" rowspan="2" width="114" height="114" class="scoremid awayscore" id="awayscore"></th>
-    <th rowspan="2" class="scoremid edge"></th>
-    <th colspan="5" id="hometeam" class="team hometeam"></th>
-    <th rowspan="2"><img id="homemascot" class="homemascot"></th>
-  </tr>
-  <tr class="2nd">
-    <td colspan="2" height="25">TOL</td>
-    <td height="25" id="hometol" class="hometol"></td>
-    <td height="25">FOULS</td>
-    <td height="25" id="homefoul" class="homefoul"></td>
-    <td height="25">FOULS</td>
-    <td height="25" id="awayfoul" class="awayfoul"></td>
-    <td height="25">TOL</td>
-    <td colspan="2" height="25" id="awaytol" class="awaytol"></td>
-  </tr>
-</table>
-<table id="halftimeTable">
-  <tr>
-    <th rowspan="2"><img id="awaymascot" class="awaymascot"></th>
-    <th colspan="5" id="awayteam" class="team awayteam"></th>
-    <th rowspan="2" class="scoremid edge"></th>
-    <th colspan="2" rowspan="2" width="114" height="114" id="homescore" class="scoremid homescore"></th>
-    <th rowspan="2" id="periodh" ></th>
-    <th colspan="2" rowspan="2" width="114" height="114" class="scoremid awayscore" id="awayscore"></th>
-    <th rowspan="2" class="scoremid edge"></th>
-    <th colspan="5" id="hometeam" class="team hometeam"></th>
-    <th rowspan="2"><img id="homemascot" class="homemascot"></th>
-  </tr>
-</table>
+  <table id="gameTable">
+    <tr>
+      <th colspan="20" id="message" class="small"></th>
+    </tr>
+    <tr>
+      <th rowspan="2"><img id="awaymascot" class="awaymascot"></th>
+      <th colspan="5" id="awayteam" class="team awayteam"></th>
+      <th rowspan="2" class="scoremid edge"></th>
+      <th colspan="2" rowspan="2" width="114" height="114" id="homescore" class="scoremid homescore"></th>
+      <th rowspan="2" id="period" class="period"></th>
+      <th colspan="2" rowspan="2" width="114" height="114" class="scoremid awayscore" id="awayscore"></th>
+      <th rowspan="2" class="scoremid edge"></th>
+      <th colspan="5" id="hometeam" class="team hometeam"></th>
+      <th rowspan="2"><img id="homemascot" class="homemascot"></th>
+    </tr>
+    <tr class="2nd">
+      <td colspan="2" height="25">TOL</td>
+      <td height="25" id="hometol" class="hometol"></td>
+      <td height="25">FOULS</td>
+      <td height="25" id="homefoul" class="homefoul"></td>
+      <td height="25">FOULS</td>
+      <td height="25" id="awayfoul" class="awayfoul"></td>
+      <td height="25">TOL</td>
+      <td colspan="2" height="25" id="awaytol" class="awaytol"></td>
+    </tr>
+  </table>
+  <table id="halftimeTable">
+    <tr>
+      <th rowspan="2"><img id="awaymascot" class="awaymascot"></th>
+      <th colspan="5" id="awayteam" class="team awayteam"></th>
+      <th rowspan="2" class="scoremid edge"></th>
+      <th colspan="2" rowspan="2" width="114" height="114" id="homescore" class="scoremid homescore"></th>
+      <th rowspan="2" id="periodh"></th>
+      <th colspan="2" rowspan="2" width="114" height="114" class="scoremid awayscore" id="awayscore"></th>
+      <th rowspan="2" class="scoremid edge"></th>
+      <th colspan="5" id="hometeam" class="team hometeam"></th>
+      <th rowspan="2"><img id="homemascot" class="homemascot"></th>
+    </tr>
+  </table>
 </body>
 </html>
